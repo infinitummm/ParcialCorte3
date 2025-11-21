@@ -1,0 +1,27 @@
+[package]
+name = "linear_regression_rust"
+version = "1.0.0"
+edition = "2021"
+authors = ["ML Researcher"]
+description = "Implementación de regresión lineal en Rust con benchmarks y comparativa Python vs Rust"
+
+[dependencies]
+# ndarray para álgebra lineal (opcional, para benchmarking con librerías)
+# ndarray = "0.15"
+# rand para generación de números aleatorios (opcional)
+# rand = "0.8"
+
+[profile.release]
+# Optimizaciones máximas para release builds
+opt-level = 3              # Máximas optimizaciones
+lto = true                 # Link-Time Optimization
+codegen-units = 1         # Mejor optimización pero más lento compilar
+strip = true              # Strip símbolos de debug
+panic = "abort"            # Abort en panic (reduce tamaño)
+
+[profile.dev]
+opt-level = 1             # Optimización mínima para desarrollo rápido
+
+[[bin]]
+name = "linear_regression"
+path = "main.rs"
