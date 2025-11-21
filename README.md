@@ -13,7 +13,7 @@
 ### 3. `3_Comparacion_Rust_VS_Python.pdf` 
 **Descripción:** Comparacion de Rust y Pyhon frente a la implementacion de regresion lineal.
 
-### 4. `Cargo` (
+### 4. `Cargo` 
 **Descripción:** Archivo de configuración de Cargo (gestor de paquetes de Rust). Define dependencias y metadatos del proyecto Rust.
 
 ### 5. `Regresion_Lineal_Rust.ps1`
